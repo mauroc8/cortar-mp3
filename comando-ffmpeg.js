@@ -9,7 +9,7 @@ function detectar_pistas(texto) {
 		
 		if(match) {
 			return {
-				nombre: línea.replace(duración, "").replace(/\//g, "-"),
+				nombre: línea.replace(duración, "").replace(/\//g, "-").replace(/\!/g, "\\!"),
 				inicio: match[1]
 			};
 		} else {
