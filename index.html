@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crear comando ffmpeg a partir de lista de temas</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<form class="contenido" id="insertar-texto">
+		<input type="text" id="nombre-archivo" placeholder="Nombre del archivo a cortar">
+		<textarea spellcheck="false" placeholder="Lista de temas"></textarea>
+		<input type="submit" value="Siguiente">
+	</form>
+	<form class="contenido oculto" id="arreglar-datos">
+		<ul></ul>
+		<p>
+			<input type="checkbox" id="numerar">
+			<label for="numerar">Agregar numeración al principio de cada pista.</label>
+		</p>
+		<p>
+			<input type="checkbox" id="borrar-original">
+			<label for="borrar-original">Borrar archivo original luego de terminar.</label>
+		</p>
+		<button>Volver</button><input type="submit" value="Siguiente">
+	</form>
+	<form class="contenido oculto" id="resultado">
+		<textarea spellcheck="false"></textarea>
+		<button>Volver</button><input type="submit" value="Empezar de nuevo">
+	</form>
+	<script src="comando-ffmpeg.js"></script>
+	<script src="ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+*{box-sizing:border-box;}
+
+body {
+	line-height: 1.5em;
+	background-color: #fefefe;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.oculto {display:none;}
+
+.contenido {
+	max-width: 700px;
+	margin: 20px auto;
+	padding: 20px;
+	box-shadow: 1px 1px 2px black;
+	background-color: #fefefe;
+}
+
+textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	height: 70vh;
+	background-color: #fefefe;
+	border:1px solid lightgray;
+	color: #666;
+}
+
+textarea:focus {color:#222;}
+
+ul { margin:0;padding:0;margin-bottom:10px; }
+li { list-style: none; }
+li:nth-child(even){background-color: #efefef;}
+
+.inicio-pista {
+	width: 10%;
+	text-align: right;
+}
+
+.nombre-pista {
+	width: 90%;
+}
+
+input[type="text"] {
+	padding: 8px;
+	border:0;
+	background-color: transparent;
+	font-size: 12px;
+	color: #666;
+}
+
+input[type="text"]:focus {
+	color: black;
+}
+
+#nombre-archivo {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid lightgray;
+	width: 100%;
+}
